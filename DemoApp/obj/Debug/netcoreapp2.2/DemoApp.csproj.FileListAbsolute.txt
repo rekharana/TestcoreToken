@@ -1,0 +1,16 @@
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.2\DemoApp.csprojAssemblyReference.cache
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.2\DemoApp.csproj.CoreCompileInputs.cache
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.2\DemoApp.AssemblyInfoInputs.cache
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.2\DemoApp.AssemblyInfo.cs
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.2\DemoApp.deps.json
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.2\DemoApp.runtimeconfig.json
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.2\DemoApp.runtimeconfig.dev.json
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.2\DemoApp.dll
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.2\DemoApp.pdb
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.2\DemoApp.DataAccess.dll
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.2\DemoApp.Service.dll
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.2\DemoApp.DataAccess.pdb
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.2\DemoApp.Service.pdb
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.2\DemoApp.csproj.CopyComplete
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.2\DemoApp.dll
+C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.2\DemoApp.pdb

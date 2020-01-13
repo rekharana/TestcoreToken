@@ -1,0 +1,5 @@
+﻿Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.SqlServer.Design
+
+Scaffold-DbContext "Server=NTZ-CPU-221\SQLEXPRESS;Database=PMI; User Id=sa; password=1212;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
