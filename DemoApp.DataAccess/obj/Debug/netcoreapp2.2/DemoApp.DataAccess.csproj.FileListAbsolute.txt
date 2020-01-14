@@ -9,3 +9,14 @@ C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp.DataAccess\bin\Debug\netcoreapp
 C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp.DataAccess\obj\Debug\netcoreapp2.2\DemoApp.DataAccess.dll
 C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp.DataAccess\obj\Debug\netcoreapp2.2\DemoApp.DataAccess.pdb
 C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp.DataAccess\obj\Debug\netcoreapp2.2\DemoApp.DataAccess.csprojAssemblyReference.cache
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\bin\Debug\netcoreapp2.2\DemoApp.DataAccess.deps.json
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\bin\Debug\netcoreapp2.2\DemoApp.DataAccess.runtimeconfig.json
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\bin\Debug\netcoreapp2.2\DemoApp.DataAccess.runtimeconfig.dev.json
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\bin\Debug\netcoreapp2.2\DemoApp.DataAccess.dll
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\bin\Debug\netcoreapp2.2\DemoApp.DataAccess.pdb
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\obj\Debug\netcoreapp2.2\DemoApp.DataAccess.csprojAssemblyReference.cache
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\obj\Debug\netcoreapp2.2\DemoApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\obj\Debug\netcoreapp2.2\DemoApp.DataAccess.AssemblyInfoInputs.cache
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\obj\Debug\netcoreapp2.2\DemoApp.DataAccess.AssemblyInfo.cs
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\obj\Debug\netcoreapp2.2\DemoApp.DataAccess.dll
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.DataAccess\obj\Debug\netcoreapp2.2\DemoApp.DataAccess.pdb

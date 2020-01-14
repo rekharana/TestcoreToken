@@ -6,3 +6,12 @@ C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp.Common\obj\Debug\netcoreapp2.2\
 C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp.Common\obj\Debug\netcoreapp2.2\DemoApp.Common.AssemblyInfo.cs
 C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp.Common\obj\Debug\netcoreapp2.2\DemoApp.Common.dll
 C:\Users\rekha.rana\Source\Repos\DemoApp\DemoApp.Common\obj\Debug\netcoreapp2.2\DemoApp.Common.pdb
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.Common\bin\Debug\netcoreapp2.2\DemoApp.Common.deps.json
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.Common\bin\Debug\netcoreapp2.2\DemoApp.Common.dll
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.Common\bin\Debug\netcoreapp2.2\DemoApp.Common.pdb
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.Common\obj\Debug\netcoreapp2.2\DemoApp.Common.csprojAssemblyReference.cache
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.Common\obj\Debug\netcoreapp2.2\DemoApp.Common.csproj.CoreCompileInputs.cache
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.Common\obj\Debug\netcoreapp2.2\DemoApp.Common.AssemblyInfoInputs.cache
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.Common\obj\Debug\netcoreapp2.2\DemoApp.Common.AssemblyInfo.cs
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.Common\obj\Debug\netcoreapp2.2\DemoApp.Common.dll
+C:\Users\rekha.rana\Source\Repos\TestcoreToken\DemoApp.Common\obj\Debug\netcoreapp2.2\DemoApp.Common.pdb

@@ -5,16 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\desktop.ini" />
+    <None Include="wwwroot\images\Image_1.jpg.jfif" />
+    <None Include="wwwroot\images\Image_2.jfif" />
+    <None Include="wwwroot\images\Image_3.jfif" />
+    <None Include="wwwroot\images\Image_4.jfif" />
+    <None Include="wwwroot\images\Image_5.jfif" />
+    <None Include="wwwroot\images\john.png" />
+    <None Include="wwwroot\images\mark.png" />
+    <None Include="wwwroot\images\mary.png" />
+    <None Include="wwwroot\images\MUSA Image.png" />
   </ItemGroup>
 
   <ItemGroup>

@@ -93,6 +93,7 @@ namespace DemoWebApi
             //    .AllowAnyOrigin()
             //    .AllowAnyMethod()
             //    .AllowAnyHeader());
+            app.UseStaticFiles();
             app.UseCors("CorsPolicy");
             app.UseAuthentication();
         }
