@@ -58,6 +58,7 @@ namespace DemoWebApi.Models
         public string introduction { get; set; }
         public string lookingFor { get; set; }
         public Photo Photos { get; set; }
+
     }
     public class Photo
     {

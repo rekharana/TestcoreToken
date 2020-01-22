@@ -1,4 +1,5 @@
 ﻿using DemoApp.DataAccess.Models;
+using DemoWebApi.Helper;
 using DemoWebApi.Helpers;
 using DemoWebApi.Mappings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -57,6 +58,7 @@ namespace DemoWebApi
                     ValidateAudience = false
                 };
             });
+            services.Configure<CloudinarySetting>(Configuration.GetSection("CloudinarySetting"));
 
             services.AddCors(options =>
             {
@@ -89,10 +91,10 @@ namespace DemoWebApi
 
             app.UseMvc();
             // global cors policy
-            //app.UseCors(x => x
-            //    .AllowAnyOrigin()
-            //    .AllowAnyMethod()
-            //    .AllowAnyHeader());
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
             app.UseStaticFiles();
             app.UseCors("CorsPolicy");
             app.UseAuthentication();

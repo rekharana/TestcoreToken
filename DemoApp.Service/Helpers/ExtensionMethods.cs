@@ -18,5 +18,28 @@ namespace DemoApp.Service.Helpers
             user.Password = null;
             return user;
         }
+
+
+        public static IEnumerable<User> UserWithoutPasswords(this IEnumerable<User> users)
+        {
+            return users.Select(x => x.UserWithoutPassword());
+        }
+
+        public static User UserWithoutPassword(this User user)
+        {
+            user.PasswordHash = null;
+            return user;
+        }
+
+        public static IEnumerable<User> UserWithoutHashPasswords(this IEnumerable<User> users)
+        {
+            return users.Select(x => x.UserWithoutHashPasswords());
+        }
+
+        public static User UserWithoutHashPasswords(this User user)
+        {
+            user.PasswordSalt = null;
+            return user;
+        }
     }
 }

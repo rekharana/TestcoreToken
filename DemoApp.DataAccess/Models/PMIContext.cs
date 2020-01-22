@@ -28,6 +28,7 @@ namespace DemoApp.DataAccess.Models
         public virtual DbSet<LetterTypes> LetterTypes { get; set; }
         public virtual DbSet<LocationAssignedToUsers> LocationAssignedToUsers { get; set; }
         public virtual DbSet<Locations> Locations { get; set; }
+        public virtual DbSet<Photo> Photo { get; set; }
         public virtual DbSet<PmicategoryTypeMasters> PmicategoryTypeMasters { get; set; }
         public virtual DbSet<PmichecklistHistoryLogs> PmichecklistHistoryLogs { get; set; }
         public virtual DbSet<PmichecklistQuestionMasters> PmichecklistQuestionMasters { get; set; }
@@ -598,6 +599,28 @@ namespace DemoApp.DataAccess.Models
                     .HasConstraintName("FK_Location_StreetMaster");
             });
 
+            modelBuilder.Entity<Photo>(entity =>
+            {
+                entity.Property(e => e.DateAdded).HasColumnType("date");
+
+                entity.Property(e => e.Description)
+                    .HasMaxLength(150)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.PublicId)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Url)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Photo)
+                    .HasForeignKey(d => d.UserId)
+                    .HasConstraintName("FK_Photo_User");
+            });
+
             modelBuilder.Entity<PmicategoryTypeMasters>(entity =>
             {
                 entity.ToTable("PMICategoryTypeMasters");
@@ -952,6 +975,42 @@ namespace DemoApp.DataAccess.Models
 
             modelBuilder.Entity<User>(entity =>
             {
+                entity.Property(e => e.City)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Country)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Created).HasColumnType("date");
+
+                entity.Property(e => e.Gender)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Interests)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Introduction)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.KnownAs)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.LastActive).HasColumnType("date");
+
+                entity.Property(e => e.LookingFor)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.PasswordHash)
                     .HasMaxLength(500)
                     .IsFixedLength();

@@ -11,6 +11,8 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+
+
 namespace DemoApp.Service
 {
     public class UserMasterService : IUserMasterService
@@ -45,7 +47,7 @@ namespace DemoApp.Service
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Sid, user.UserId.ToString()),
+                    new Claim("UserId", user.UserId.ToString()),
                     new Claim(ClaimTypes.Name, user.FirstName.ToString() +" " +user.LastName.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
@@ -56,9 +58,22 @@ namespace DemoApp.Service
             return user.WithoutPassword();
         }
 
+
         public IEnumerable<UserMasters> GetAll()
         {
             return _db.UserMasters.ToList().WithoutPasswords();
+        }
+
+
+        public IEnumerable<User> GetAllUsers()
+        {
+            return _db.User.ToList().UserWithoutPasswords();
+        }
+
+        public User GetUserById(int userId)
+        {
+          return _db.User.Include(x=>x.Photo).FirstOrDefault(x => x.Id == userId).UserWithoutPassword().UserWithoutHashPasswords();                               
+
         }
 
         public async void Register(string username, byte[] passwordHash, byte[] passwordSalt)
@@ -82,9 +97,25 @@ namespace DemoApp.Service
             if (user==null)            
                 return null;
 
-            if (!VerifyPasswordHash(password,user.PasswordHash, user.PasswordSalt))
-                return null;
-            return user;
+            //if (!VerifyPasswordHash(password,user.PasswordHash, user.PasswordSalt))
+            //    return null;
+
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim("UserId", user.Id.ToString()),
+                    new Claim(ClaimTypes.Name, user.KnownAs.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddDays(7),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            user.TokenId = tokenHandler.WriteToken(token);
+            return user.UserWithoutPassword();         
 
         }
         
@@ -102,5 +133,30 @@ namespace DemoApp.Service
             }
         }
 
+        public void Update(User user) {
+
+            var isExist = _db.User.Find(user.Id);
+            if (isExist != null)
+            {
+                isExist.Age = user.Age;
+                isExist.City = user.City;
+                isExist.Country = user.Country;
+                isExist.Gender = user.Gender;
+                isExist.Interests = user.Interests;
+                isExist.Introduction = user.Introduction;
+                isExist.KnownAs = user.KnownAs;
+                isExist.LastActive = DateTime.Now;
+                isExist.LookingFor = user.LookingFor;
+                isExist.Name = user.Name;
+                _db.Update(isExist);
+                _db.SaveChanges();
+            }      
+        }
+        public bool IsExist(int userId)
+        {
+            return _db.User.Find(userId)==null ? false: true;
+        }
+
+        
     }
 }
